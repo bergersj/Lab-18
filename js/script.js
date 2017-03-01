@@ -1,17 +1,17 @@
 var app = angular.module('myMod');
 
-app.directive('header', function(){
+app.directive('ourHeader', function(){
   return {
     restrict: 'EA',
-    templateUrl: 'partials/headerPartial.html',
+    templateUrl: 'partials/ourHeader.html',
     replace: false
   };
 });
 
-app.directive('footer', function(){
+app.directive('ourFooter', function(){
   return {
     restrict: 'EA',
-    templateUrl: 'partials/footerPartial.html',
+    templateUrl: 'partials/ourFooter.html',
     replace: false
   };
 });
