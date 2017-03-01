@@ -5,21 +5,26 @@
     <title>Lab 18</title>
   </head>
 
-  <body ng-app = 'myMod' ng-controller='fizzbuzzController'>
+  <body ng-app = 'myMod'>
 
-  <button type = "button"> <a href="#/yoda"> Yoda </a></button>
-  <button type = "button"> <a href="#/fizzbuzz"> FizzBuzz </a> </button><br>
+    <!-- <header></header> -->
+
+    <button type = "button"> <a href="#/weather"> Weather </a></button>
+    <button type = "button"> <a href="#/fizzbuzz"> FizzBuzz </a> </button><br>
 
 
-<ng-view></ng-view>
+    <ng-view></ng-view>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.2/angular-route.js"></script>
-    <!-- <script src="js/yoda/yodaController.js"></script> -->
-    <!-- <script src="js/yoda/yodaFactory.js"></script> -->
     <script src="js/module.js"></script>
-    <script src="js/fizzbuzz/fizzbuzzFactory.js"></script>
     <script src="js/fizzbuzz/fizzbuzzController.js"></script>
+    <script src="js/fizzbuzz/fizzbuzzFactory.js"></script>
+    <script src="js/weather/weatherController.js"></script>
+    <script src="js/weather/weatherFactory.js"></script>
+    <script src="js/weather/weatherService.js"></script>
+    <!-- <script src="script.js"></script> -->
 
   </body>
 </html>

@@ -6,10 +6,10 @@ app.config(function($routeProvider, $locationProvider){
       controller: 'fizzbuzzController',
       templateUrl: 'fizzbuzz.html'
     })
-    .when('/yoda', {
-      controller: 'yodaController',
-      templateUrl: 'yoda.html'
+    .when('/weather', {
+      controller: 'weatherController',
+      templateUrl: 'weather.html'
     })
-    .otherwise({ redirectTo: '/' });
+    .otherwise({ redirectTo: '/fizzbuzz' });
     $locationProvider.hashPrefix('');
 });
