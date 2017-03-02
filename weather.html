@@ -1,13 +1,12 @@
+<h3>Weather Check</h3>
+<p>
+  Enter a city and state to check the current temerature in fahrenheit and the current weather.
+</p>
 <input type="text" ng-model="inputCity" placeholder="Enter city" />
 <input type="text" ng-model="inputState" placeholder="Enter state" />
-<button ng-click="findWeather(inputCity, inputState)">Find Weather</button>
-<p>
-  The current temperature in {{inputCity}} is {{results.temp}} degrees F, and the weather is {{results.weather}}.
-</p>
-
-
-<!-- <input type="text" ng-mode="inputText">
-
-<button type="button" ng-click="getYodaText(inputText)">Yoda-fy</button>
-
-<p>{{text.yodaSpeech}}</p> -->
+<button ng-click="findWeather(inputCity, inputState)">Get Weather</button>
+<div ng-show="display">
+  <p>
+    The current temperature in {{inputCity}} is {{results.temp}} degrees F, and the weather is {{results.weather}}.
+  </p>
+</div>

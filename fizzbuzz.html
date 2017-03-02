@@ -4,4 +4,6 @@
 
 <button type="button" ng-click="runFactory(inputNumber)">Submit</button>
 
-<p>{{answer}}</p>
+<div ng-show="display">
+  <p>The number {{inputNumber}} is {{answer}}</p>
+</div>

@@ -1,0 +1,14 @@
+.content {
+  border: solid 1px black;
+  margin: 5px;
+  padding: 5px;
+}
+.view {
+  border: solid 1px black;
+  margin: 5px;
+  padding: 5px;
+}
+.ng-hide {
+  height: 0;
+  width: 0;
+}
