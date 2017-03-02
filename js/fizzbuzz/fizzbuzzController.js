@@ -2,8 +2,12 @@ var app = angular.module('myMod');
 
 app.controller("fizzbuzzController", function($scope, fizzbuzzFactory ){
 
+$scope.results = [];
+
   $scope.runFactory = function(inputNumber){
-    $scope.answer = fizzbuzzFactory.fizzbuzz(inputNumber);
+    // $scope.answer = fizzbuzzFactory.fizzbuzz(inputNumber);
+    $scope.results.push(fizzbuzzFactory.fizzbuzz(inputNumber));
+    console.log($scope.results);
     if (!$scope.display){
       $scope.display = !$scope.display;
     }else{
@@ -11,18 +15,3 @@ app.controller("fizzbuzzController", function($scope, fizzbuzzFactory ){
     };
  }
 });
-
-
-// var app = angular.module('myMod');
-//
-// app.controller('fbControl', function($scope, fbFactory){
-//
-// $scope.runFizzBuzz = function(input){
-//   $scope.result = fbFactory.fizzbuzz(input);
-//   if (!$scope.display){
-//     $scope.display = !$scope.display;
-//   }else{
-//
-//   };
-// }
-// });
