@@ -1,10 +1,11 @@
-
+<img src="img/download.png" align="left" />
 
 <input type="number" ng-model="inputNumber" placeholder="Number"> <br>
 
 <button type="button" ng-click="runFactory(inputNumber)">Submit</button>
 
+
 <div ng-show="display">
-  <!-- <p>The number {{inputNumber}} is {{answer}}</p> -->
-   <p ng-repeat="result in results track by $index">The number {{input}} is {{result}}</p>
+    <!-- <p>The number {{inputNumber}} is {{answer}}</p> -->
+    <p ng-repeat="result in results track by $index">The number {{input}} is {{result}}</p>
 </div>
